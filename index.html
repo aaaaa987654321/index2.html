@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>浜田高校オープンスクール</title>
-    <!-- Tailwind CSS CDN -->
+    <!--
+        Tailwind CSSをCDNから読み込んでいます。
+        これにより、GitHub PagesにこのHTMLファイルを直接アップロードするだけで、
+        スタイルが適用されたWebページとして表示されます。
+    -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) を読み込んでいます -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* 基本フォントと背景色 */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light gray background */
-            color: #333;
+            background-color: #f0f4f8; /* 薄いグレーの背景 */
+            color: #333; /* 暗めのテキスト色 */
         }
-        /* Custom styles based on the image colors */
+        /* 画像の色合いに基づいたカスタムスタイル */
         .header-bg {
-            background-color: #e0f2f7; /* Light blue-green */
+            background-color: #e0f2f7; /* 明るい青緑 */
         }
         .section-bg-light {
-            background-color: #e0e0e0; /* Light gray */
+            background-color: #e0e0e0; /* 明るいグレー */
         }
         .section-bg-dark {
-            background-color: #1a202c; /* Dark blue/gray */
-            color: #fff;
+            background-color: #1a202c; /* ダークブルー/グレー */
+            color: #fff; /* 明るいテキスト色 */
         }
         .photo-border {
-            border: 2px solid #b8860b; /* Goldenrod color for photo borders */
+            border: 2px solid #b8860b; /* 写真の枠線色 (ゴールデンロッド) */
         }
+        /* 縦書きのテキスト用スタイル (今回は未使用ですが、参考として残しています) */
         .vertical-text {
             writing-mode: vertical-rl;
             -webkit-writing-mode: vertical-rl;
@@ -37,7 +44,7 @@
 </head>
 <body class="min-h-screen flex flex-col items-center p-4">
 
-    <!-- Header Section -->
+    <!-- ヘッダーセクション -->
     <header class="w-full max-w-4xl header-bg p-6 md:p-8 rounded-xl shadow-lg mb-8 text-center">
         <h1 class="text-3xl md:text-5xl font-extrabold text-blue-800 mb-4 drop-shadow-md">浜田高校オープンスクール</h1>
         <p class="text-lg md:text-xl text-blue-700">未来を見つける一日、浜田高校へようこそ！</p>
@@ -45,7 +52,7 @@
 
     <main class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
-        <!-- Open School Details Section (Left/Main) -->
+        <!-- オープンスクール詳細セクション (左/メインコンテンツ) -->
         <section class="section-bg-light p-6 rounded-xl shadow-md flex flex-col justify-between">
             <h2 class="text-xl md:text-2xl font-bold mb-4 text-center">浜田高校のオープンスクールの詳細情報</h2>
             <div class="space-y-4 text-base md:text-lg">
@@ -67,8 +74,9 @@
             </div>
         </section>
 
-        <!-- Photo Gallery Section -->
+        <!-- 写真ギャラリーセクション -->
         <section class="grid grid-cols-2 gap-4">
+            <!-- placehold.co を使用した画像プレースホルダー。実際の学校の写真に差し替えてください。 -->
             <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
                 <img src="https://placehold.co/400x400/a0a0a0/ffffff?text=学校の様子1" alt="学校の様子1" class="w-full h-full object-cover">
             </div>
@@ -83,7 +91,7 @@
             </div>
         </section>
 
-        <!-- Student Testimonials Section -->
+        <!-- 在校生の感想セクション -->
         <section class="md:col-span-2 section-bg-dark p-6 rounded-xl shadow-md text-center">
             <h2 class="text-xl md:text-2xl font-bold mb-6">在校生のオープンスクールの感想</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -111,7 +119,7 @@
             </div>
         </section>
 
-        <!-- Access / Contact Section (Right/Secondary Info - simulating the vertical text part) -->
+        <!-- アクセス/お問い合わせセクション (右/補足情報 - 縦書き部分をシミュレート) -->
         <section class="section-bg-light p-6 rounded-xl shadow-md md:col-span-1 flex flex-col justify-center items-center text-center">
             <h2 class="text-xl md:text-2xl font-bold mb-4">アクセスマップ</h2>
             <div class="w-full h-48 md:h-64 bg-gray-400 rounded-lg overflow-hidden mb-4 flex items-center justify-center text-white text-lg">
@@ -123,8 +131,9 @@
             <p class="text-sm text-gray-600 mt-4">公共交通機関でのアクセスについては、学校公式サイトをご確認ください。</p>
         </section>
 
-        <!-- Application Button -->
+        <!-- 申し込みボタンセクション -->
         <section class="md:col-span-2 text-center my-8">
+            <!-- 申し込みURLをGoogleフォームに設定しています -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScul9QAjXeu3BVthHami56h258D9SuXT8UiqKFtmEwEdDuGWg/viewform" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl md:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
                 オープンスクールに申し込む
             </a>
@@ -133,7 +142,7 @@
 
     </main>
 
-    <!-- Footer Section -->
+    <!-- フッターセクション -->
     <footer class="w-full max-w-4xl text-center py-6 mt-8 border-t-2 border-gray-300 text-gray-700 text-sm">
         <p>島根県立浜田高等学校 全日制</p>
         <p>〒697-0024 島根県浜田市黒川町3749番地</p>
