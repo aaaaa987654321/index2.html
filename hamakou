@@ -1,0 +1,145 @@
+YPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浜田高校オープンスクール</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #333;
+        }
+        /* Custom styles based on the image colors */
+        .header-bg {
+            background-color: #e0f2f7; /* Light blue-green */
+        }
+        .section-bg-light {
+            background-color: #e0e0e0; /* Light gray */
+        }
+        .section-bg-dark {
+            background-color: #1a202c; /* Dark blue/gray */
+            color: #fff;
+        }
+        .photo-border {
+            border: 2px solid #b8860b; /* Goldenrod color for photo borders */
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-4">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl header-bg p-6 md:p-8 rounded-xl shadow-lg mb-8 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-blue-800 mb-4 drop-shadow-md">浜田高校オープンスクール</h1>
+        <p class="text-lg md:text-xl text-blue-700">未来を見つける一日、浜田高校へようこそ！</p>
+    </header>
+
+    <main class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+        <!-- Open School Details Section (Left/Main) -->
+        <section class="section-bg-light p-6 rounded-xl shadow-md flex flex-col justify-between">
+            <h2 class="text-xl md:text-2xl font-bold mb-4 text-center">浜田高校のオープンスクールの詳細情報</h2>
+            <div class="space-y-4 text-base md:text-lg">
+                <p><strong class="text-blue-700">開催日時:</strong> 2025年8月24日(土) 9:30 - 15:00 (受付開始 9:00)</p>
+                <p><strong class="text-blue-700">開催場所:</strong> 島根県立浜田高等学校 (詳細は下記アクセス情報をご覧ください)</p>
+                <p><strong class="text-blue-700">対象:</strong> 中学生、保護者の皆様</p>
+                <p><strong class="text-blue-700">プログラム:</strong></p>
+                <ul class="list-disc list-inside ml-4">
+                    <li>学校概要説明</li>
+                    <li>体験授業 (各科目のミニ授業)</li>
+                    <li>部活動見学・体験</li>
+                    <li>在校生との交流会</li>
+                    <li>施設見学ツアー</li>
+                    <li>個別相談会</li>
+                </ul>
+                <p><strong class="text-blue-700">持ち物:</strong> 筆記用具、上履き、飲み物</p>
+                <p><strong class="text-blue-700">参加費:</strong> 無料</p>
+                <p class="text-sm text-gray-600 mt-4">※事前の申し込みが必要です。詳細は下記申し込み方法をご確認ください。</p>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="grid grid-cols-2 gap-4">
+            <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
+                <img src="https://placehold.co/400x400/a0a0a0/ffffff?text=学校の様子1" alt="学校の様子1" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
+                <img src="https://placehold.co/400x400/b0b0b0/ffffff?text=学校の様子2" alt="学校の様子2" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
+                <img src="https://placehold.co/400x400/c0c0c0/ffffff?text=学校の様子3" alt="学校の様子3" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
+                <img src="https://placehold.co/400x400/d0d0d0/ffffff?text=学校の様子4" alt="学校の様子4" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Student Testimonials Section -->
+        <section class="md:col-span-2 section-bg-dark p-6 rounded-xl shadow-md text-center">
+            <h2 class="text-xl md:text-2xl font-bold mb-6">在校生のオープンスクールの感想</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 photo-border">
+                        <img src="https://placehold.co/200x200/555/ffffff?text=生徒A" alt="生徒A" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-sm md:text-base italic">「先生方や先輩方がとても親切で、学校の雰囲気を肌で感じることができました！体験授業も楽しく、入学が待ち遠しいです。」</p>
+                    <p class="text-xs md:text-sm text-gray-400 mt-2">（1年生 女子生徒）</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 photo-border">
+                        <img src="https://placehold.co/200x200/666/ffffff?text=生徒B" alt="生徒B" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-sm md:text-base italic">「部活動の体験に参加し、先輩たちの熱心な姿に感動しました。自分もこの高校で頑張りたいと強く思いました。」</p>
+                    <p class="text-xs md:text-sm text-gray-400 mt-2">（2年生 男子生徒）</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 photo-border">
+                        <img src="https://placehold.co/200x200/777/ffffff?text=生徒C" alt="生徒C" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-sm md:text-base italic">「個別相談で、自分の進路について具体的に相談できたのが良かったです。先生が真剣に話を聞いてくださり、安心しました。」</p>
+                    <p class="text-xs md:text-sm text-gray-400 mt-2">（3年生 女子生徒）</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access / Contact Section (Right/Secondary Info - simulating the vertical text part) -->
+        <section class="section-bg-light p-6 rounded-xl shadow-md md:col-span-1 flex flex-col justify-center items-center text-center">
+            <h2 class="text-xl md:text-2xl font-bold mb-4">アクセスマップ</h2>
+            <div class="w-full h-48 md:h-64 bg-gray-400 rounded-lg overflow-hidden mb-4 flex items-center justify-center text-white text-lg">
+                <img src="https://placehold.co/600x400/808080/ffffff?text=地図イメージ" alt="地図イメージ" class="w-full h-full object-cover">
+            </div>
+            <p class="text-base md:text-lg mb-2"><strong class="text-blue-700">島根県立浜田高等学校</strong></p>
+            <p class="text-sm md:text-base mb-2">〒697-0024 島根県浜田市黒川町3749番地</p>
+            <p class="text-sm md:text-base"><strong class="text-blue-700">TEL:</strong> 0855-22-0042</p>
+            <p class="text-sm text-gray-600 mt-4">公共交通機関でのアクセスについては、学校公式サイトをご確認ください。</p>
+        </section>
+
+        <!-- Application Button -->
+        <section class="md:col-span-2 text-center my-8">
+            <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl md:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+                オープンスクールに申し込む
+            </a>
+            <p class="text-sm text-gray-700 mt-4">※申し込み期間：2025年7月1日(月) ～ 2025年8月10日(土)</p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full max-w-4xl text-center py-6 mt-8 border-t-2 border-gray-300 text-gray-700 text-sm">
+        <p>島根県立浜田高等学校 全日制</p>
+        <p>〒697-0024 島根県浜田市黒川町3749番地</p>
+        <p>Tell 0855-22-0042</p>
+        <p class="mt-2">&copy; 2025 島根県立浜田高等学校 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
