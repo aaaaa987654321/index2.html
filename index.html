@@ -16,22 +16,22 @@
         /* 基本フォントと背景色 */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* 薄いグレーの背景 */
+            background-color: #f8f0f8; /* 非常に薄い紫の背景 */
             color: #333; /* 暗めのテキスト色 */
         }
         /* 画像の色合いに基づいたカスタムスタイル */
         .header-bg {
-            background-color: #e0f2f7; /* 明るい青緑 */
+            background-color: #f2e0f7; /* 明るい紫色 */
         }
         .section-bg-light {
-            background-color: #e0e0e0; /* 明るいグレー */
+            background-color: #f0e0f0; /* 非常に明るい紫色 */
         }
         .section-bg-dark {
-            background-color: #1a202c; /* ダークブルー/グレー */
+            background-color: #3d1a4e; /* 濃い紫色 */
             color: #fff; /* 明るいテキスト色 */
         }
         .photo-border {
-            border: 2px solid #b8860b; /* 写真の枠線色 (ゴールデンロッド) */
+            border: 2px solid #8a2be2; /* 写真の枠線色 (青みがかった紫) */
         }
         /* 縦書きのテキスト用スタイル (今回は未使用ですが、参考として残しています) */
         .vertical-text {
@@ -46,8 +46,8 @@
 
     <!-- ヘッダーセクション -->
     <header class="w-full max-w-4xl header-bg p-6 md:p-8 rounded-xl shadow-lg mb-8 text-center">
-        <h1 class="text-3xl md:text-5xl font-extrabold text-blue-800 mb-4 drop-shadow-md">浜田高校オープンスクール</h1>
-        <p class="text-lg md:text-xl text-blue-700">未来を見つける一日、浜田高校へようこそ！</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-purple-800 mb-4 drop-shadow-md">浜田高校オープンスクール</h1>
+        <p class="text-lg md:text-xl text-purple-700">未来を見つける一日、浜田高校へようこそ！</p>
     </header>
 
     <main class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -56,10 +56,10 @@
         <section class="section-bg-light p-6 rounded-xl shadow-md flex flex-col justify-between">
             <h2 class="text-xl md:text-2xl font-bold mb-4 text-center">浜田高校のオープンスクールの詳細情報</h2>
             <div class="space-y-4 text-base md:text-lg">
-                <p><strong class="text-blue-700">開催日時:</strong> 2025年8月24日(土) 9:30 - 15:00 (受付開始 9:00)</p>
-                <p><strong class="text-blue-700">開催場所:</strong> 島根県立浜田高等学校 (詳細は下記アクセス情報をご覧ください)</p>
-                <p><strong class="text-blue-700">対象:</strong> 中学生、保護者の皆様</p>
-                <p><strong class="text-blue-700">プログラム:</strong></p>
+                <p><strong class="text-purple-700">開催日時:</strong> 2025年8月24日(土) 9:30 - 15:00 (受付開始 9:00)</p>
+                <p><strong class="text-purple-700">開催場所:</strong> 島根県立浜田高等学校 (詳細は下記アクセス情報をご覧ください)</p>
+                <p><strong class="text-purple-700">対象:</strong> 中学生、保護者の皆様</p>
+                <p><strong class="text-purple-700">プログラム:</strong></p>
                 <ul class="list-disc list-inside ml-4">
                     <li>学校概要説明</li>
                     <li>体験授業 (各科目のミニ授業)</li>
@@ -68,26 +68,26 @@
                     <li>施設見学ツアー</li>
                     <li>個別相談会</li>
                 </ul>
-                <p><strong class="text-blue-700">持ち物:</strong> 筆記用具、上履き、飲み物</p>
-                <p><strong class="text-blue-700">参加費:</strong> 無料</p>
+                <p><strong class="text-purple-700">持ち物:</strong> 筆記用具、上履き、飲み物</p>
+                <p><strong class="text-purple-700">参加費:</strong> 無料</p>
                 <p class="text-sm text-gray-600 mt-4">※事前の申し込みが必要です。詳細は下記申し込み方法をご確認ください。</p>
             </div>
         </section>
 
         <!-- 写真ギャラリーセクション -->
         <section class="grid grid-cols-2 gap-4">
-            <!-- placehold.co を使用した画像プレースホルダー。実際の学校の写真に差し替えてください。 -->
+            <!-- 実際の学校の写真に差し替えてください。 -->
             <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
-                <img src="https://www.hamakou.ed.jp/images/original/20241028130759218ef205f76.jpg">
+                <img src="https://www.hamakou.ed.jp/images/original/20241028130759218ef205f76.jpg" alt="学校の様子1" class="w-full h-full object-cover">
             </div>
             <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
-                <img src="https://placehold.co/400x400/b0b0b0/ffffff?text=学校の様子2" alt="学校の様子2" class="w-full h-full object-cover">
+                <img src="https://www.hamakou.ed.jp/images/original/2024102813082716138d08711.jpg" alt="学校の様子2" class="w-full h-full object-cover">
             </div>
             <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
-                <img src="https://placehold.co/400x400/c0c0c0/ffffff?text=学校の様子3" alt="学校の様子3" class="w-full h-full object-cover">
+                <img src="https://www.hamakou.ed.jp/images/original/20240325140243615cdc7e2ff.jpg" alt="学校の様子3" class="w-full h-full object-cover">
             </div>
             <div class="photo-border rounded-xl aspect-square flex items-center justify-center bg-gray-300 text-gray-600 text-lg md:text-xl font-semibold overflow-hidden shadow-md">
-                <img src="https://placehold.co/400x400/d0d0d0/ffffff?text=学校の様子4" alt="学校の様子4" class="w-full h-full object-cover">
+                <img src="https://www.hamakou.ed.jp/images/thumb/20250327150712875297ec512.jpg">
             </div>
         </section>
 
@@ -97,21 +97,21 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="flex flex-col items-center">
                     <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 photo-border">
-                        <img src="https://placehold.co/200x200/555/ffffff?text=生徒A" alt="生徒A" class="w-full h-full object-cover">
+                        <img src="https://www.hamakou.ed.jp/theme/sn-default/images/common/no-img.png">
                     </div>
                     <p class="text-sm md:text-base italic">「先生方や先輩方がとても親切で、学校の雰囲気を肌で感じることができました！体験授業も楽しく、入学が待ち遠しいです。」</p>
                     <p class="text-xs md:text-sm text-gray-400 mt-2">（1年生 女子生徒）</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 photo-border">
-                        <img src="https://placehold.co/200x200/666/ffffff?text=生徒B" alt="生徒B" class="w-full h-full object-cover">
+                        <img src="https://www.hamakou.ed.jp/theme/sn-default/images/common/no-img.png">
                     </div>
                     <p class="text-sm md:text-base italic">「部活動の体験に参加し、先輩たちの熱心な姿に感動しました。自分もこの高校で頑張りたいと強く思いました。」</p>
                     <p class="text-xs md:text-sm text-gray-400 mt-2">（2年生 男子生徒）</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-3 photo-border">
-                        <img src="https://placehold.co/200x200/777/ffffff?text=生徒C" alt="生徒C" class="w-full h-full object-cover">
+                        <img src="https://www.hamakou.ed.jp/theme/sn-default/images/common/no-img.png">
                     </div>
                     <p class="text-sm md:text-base italic">「個別相談で、自分の進路について具体的に相談できたのが良かったです。先生が真剣に話を聞いてくださり、安心しました。」</p>
                     <p class="text-xs md:text-sm text-gray-400 mt-2">（3年生 女子生徒）</p>
@@ -125,16 +125,16 @@
             <div class="w-full h-48 md:h-64 bg-gray-400 rounded-lg overflow-hidden mb-4 flex items-center justify-center text-white text-lg">
                 <img src="https://placehold.co/600x400/808080/ffffff?text=地図イメージ" alt="地図イメージ" class="w-full h-full object-cover">
             </div>
-            <p class="text-base md:text-lg mb-2"><strong class="text-blue-700">島根県立浜田高等学校</strong></p>
+            <p class="text-base md:text-lg mb-2"><strong class="text-purple-700">島根県立浜田高等学校</strong></p>
             <p class="text-sm md:text-base mb-2">〒697-0024 島根県浜田市黒川町3749番地</p>
-            <p class="text-sm md:text-base"><strong class="text-blue-700">TEL:</strong> 0855-22-0042</p>
+            <p class="text-sm md:text-base"><strong class="text-purple-700">TEL:</strong> 0855-22-0042</p>
             <p class="text-sm text-gray-600 mt-4">公共交通機関でのアクセスについては、学校公式サイトをご確認ください。</p>
         </section>
 
         <!-- 申し込みボタンセクション -->
         <section class="md:col-span-2 text-center my-8">
             <!-- 申し込みURLをGoogleフォームに設定し、新しいタブで開くように変更しました -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScul9QAjXeu3BVthHami56h258D9SuXT8UiqKFtmEwEdDuGWg/viewform" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xl md:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScul9QAjXeu3BVthHami56h258D9SuXT8UiqKFtmEwEdDuGWg/viewform" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 hover:bg-purple-700 text-white text-xl md:text-2xl font-bold py-4 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
                 オープンスクールに申し込む
             </a>
             <p class="text-sm text-gray-700 mt-4">※申し込み期間：2025年7月1日(月) ～ 2025年8月10日(土)</p>
